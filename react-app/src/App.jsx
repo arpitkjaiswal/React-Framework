@@ -2,11 +2,12 @@ import Tea from "./tea"
 
 function App() {
  
+  const username = "Messi"
   
   return (
     <>
     <Tea/> 
-    <h1> Messi is as good as Ronaldo</h1>
+    <h1> {username} is as good as Ronaldo</h1>
     <p>Fifa </p>
     </>
   )         
