@@ -1,7 +1,8 @@
 import React from "react";
 
-function Card(props) {
-    console.log("props in card.jsx", props);
+function Card({username, btntext="Click Me"}) {
+    console.log("username in card.jsx", username);
+    console.log("btntext in card.jsx", btntext);
   return (
     <div className="w-80 rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition duration-300">
       <img
@@ -12,7 +13,7 @@ function Card(props) {
 
       <div className="p-5">
         <h2 className="text-2xl font-bold text-gray-800 mb-2">
-          Tailwind CSS
+          Tailwind CSS {username}
         </h2>
 
         <p className="text-gray-600 text-sm">
@@ -21,7 +22,7 @@ function Card(props) {
         </p>
 
         <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
-          Learn More
+          {btntext }
         </button>
       </div>
     </div>
