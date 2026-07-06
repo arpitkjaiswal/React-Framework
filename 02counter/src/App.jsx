@@ -11,13 +11,13 @@ function App() {
   const addValue = () => {
      console.log("Value of counter is ", counter)
      if (counter < 20) {
-    setCounter(counter + 1)
+    setCounter(previousCounter => previousCounter + 4)
   }
 }
   const removeValue = () => {
     console.log("Value of counter is ", counter)
     if (counter > 0) {
-      setCounter(counter - 1)
+      setCounter(previousCounter => previousCounter - 1)
     }
   }
 
